@@ -1,4 +1,8 @@
 # ayonet
-Landing Page ayonet.id
+<p align=center >
+<img src="https://kopriyanto.github.io/ayonet/image/ayonet.png" alt="logo">
 
-<img src="https://kopriyanto.github.io/ayonet/image/footer2.jpg" alt="logo">
+
+Landing Page ayonet.id
+</p>
+
