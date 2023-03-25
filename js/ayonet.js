@@ -5,8 +5,10 @@ let rotate = function(icon) {
     icon.querySelector("a").classList.toggle("from-cyan-500");
     icon.querySelector("a").classList.toggle("to-blue-700");
     icon.querySelector("h1").classList.toggle("text-white");
+    icon.querySelector("p").classList.toggle("block");
 
 }
+
 
 const width = window.innerWidth;
 
