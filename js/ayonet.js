@@ -1,52 +1,66 @@
-function muncul(x){
-    const span = x.getElementsByTagName('span')[0];
-    const a = x.getElementsByTagName('a')[0];
-    const h1 = x.getElementsByTagName('h1')[0];
-    const p = x.getElementsByTagName('div')[0];
-    const svg = x.getElementsByTagName('svg')[0];
-    const open = false;
+let rotate = function(icon) {
+    icon.querySelector("span").classList.toggle("rotate-90");
+    icon.querySelector("span").classList.toggle("text-white");
+    icon.querySelector("a").classList.toggle("bg-gradient-to-r");
+    icon.querySelector("a").classList.toggle("from-cyan-500");
+    icon.querySelector("a").classList.toggle("to-blue-700");
+    icon.querySelector("h1").classList.toggle("text-white");
 
-    // console.log(a.classList.contains('bg-white'))
-    // console.log(span.classList.contains('rotate-90'))
-    
-    if(a.classList.contains('bg-white') == true){
-        a.classList.remove('bg-white');
-        // a.classList.add('rotate-90');
-        a.classList.add('bg-gradient-to-r', 'from-cyan-500', 'to-blue-700');
-    
-        x.getElementsByTagName('span')[0].style.transform = "rotate(90deg)";
-        span.classList.add('text-white');
-    
-        h1.classList.remove('text-black');
-        h1.classList.add('text-white');
-        
-    }else{
-        a.classList.add('bg-white');
-        a.classList.remove('bg-gradient-to-r', 'from-cyan-500', 'to-blue-700');
-    
-        x.getElementsByTagName('span')[0].style.transform = "rotate(0deg)";
-        span.classList.remove('text-white');
-    
-        h1.classList.add('text-black');
-        h1.classList.remove('text-white');
-    }
 }
 
-// function out(x){
-//     const span = x.getElementsByTagName('span')[0];
-//     const a = x.getElementsByTagName('a')[0];
-//     const h1 = x.getElementsByTagName('h1')[0];
-//     const p = x.getElementsByTagName('div')[0];
+const width = window.innerWidth;
 
-//     a.classList.remove('bg-white');
-//     a.classList.add('bg-gradient-to-r', 'from-cyan-500', 'to-blue-800');
-
-//     span.classList.add('rotate-90');
-//     span.classList.add('text-white');
-
-//     h1.classList.remove('text-black');
-//     h1.classList.add('text-white');
+if( width >=900 ){
     
-//     p.classList.remove('hidden');
-//     p.classList.add('block');
-// }
+    ScrollReveal({ reset: true });
+    ScrollReveal().reveal(".cont-item", {
+        duration: 1000,
+        origin: "bottom",
+        distance: "100px",
+        easing: "cubic-bezier(.37,.01,.74,1)",
+        opacity: 0.3,
+        scale: 0.5
+    });
+    
+    ScrollReveal().reveal(".slide-right", {
+        duration: 2000,
+        origin: "left",
+        distance: "300px",
+        easing: "ease-in-out"
+    });
+    
+    ScrollReveal().reveal(".slide-left", {
+        duration: 2000,
+        origin: "right",
+        distance: "300px",
+        easing: "ease-in-out"
+    });
+}else if( width < 900 ){
+    ScrollReveal({ reset: true });
+    ScrollReveal().reveal(".slide-700", {
+        duration: 900,
+        origin: "right",
+        distance: "-50px",
+        easing: "ease-in-out"
+    });
+    ScrollReveal().reveal(".cont-item", {
+        duration: 800,
+        origin: "bottom",
+        distance: "100px",
+        easing: "cubic-bezier(.37,.01,.74,1)",
+        opacity: 0.3,
+        scale: 0.5
+    });
+}
+
+$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});

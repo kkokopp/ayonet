@@ -13,10 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 
-    <script src="js/ayonet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
-<body>
+<body class="overflow-x-hidden">
   <!-- Navbar -->
   <nav class="bg-slate-900 shadow-md border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed z-50 w-full top-0">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
@@ -145,7 +146,7 @@
 
     <div class="container mx-auto my-auto px-8 lg:columns-4 md:columns-2 mt-3 p-5">
       <div class="flex h-full flex-wrap">
-        <div class="h-full w-full bg-white group mb-3">
+        <div class="con-item h-full w-full bg-white group mb-3">
           <div class="transition delay-200 duration-400 group-hover:bg-gradient-to-r group-hover:from-cyan-500 group-hover:to-blue-700 h-full w-full p-3 shadow-sm border-solid border-2 rounded-lg border-blue-800 mb-3">
             <div class="group-hover:-translate-y-10 transition delay-150 duration-300">
               <div class="flex">
@@ -157,12 +158,12 @@
                 </span>
               </div>
                 <h1 class="mx-auto group-hover:text-white text-center font-poppins font-semibold text-blue-800">Speed On Demand</h1>
-                <p class="mx-auto group-hover:text-white p-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, dignissimos!</p>
+                <p class="mx-auto group-hover:text-white p-3 text-center">Penyesuaian kecepatan yang disesuaikan dengan kebutuhan Anda</p>
                 <p class="mx-auto text-white text-center group-hover:opacity-100 opacity-0 transition duration-300 delay-150"><a href="#">Details</a></p>
             </div>
           </div>
         </div>
-        <div class="h-full w-full bg-white group mb-3">
+        <div class="con-item h-full w-full bg-white group mb-3">
           <div class="transition delay-200 duration-400 group-hover:bg-gradient-to-r group-hover:from-cyan-500 group-hover:to-blue-700 h-full w-full p-3 shadow-sm border-solid border-2 rounded-lg border-blue-800 mb-3">
             <div class="group-hover:-translate-y-10 transition delay-150 duration-300">
               <div class="flex">
@@ -175,12 +176,12 @@
                 </span>
               </div>
                 <h1 class="mx-auto group-hover:text-white text-center font-poppins font-semibold text-blue-800">Download Hingga 1 GB</h1>
-                <p class="mx-auto group-hover:text-white p-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, dignissimos!</p>
+                <p class="mx-auto group-hover:text-white p-3 text-center">Bagi Anda pengguna dengan aktivitas dan kebutuhan tinggi</p>
                 <p class="mx-auto text-white text-center group-hover:opacity-100 opacity-0 transition duration-300 delay-150"><a href="#">Details</a></p>
             </div>
           </div>
         </div>
-        <div class="h-full w-full bg-white group mb-3">
+        <div class="con-item h-full w-full bg-white group mb-3">
           <div class="transition delay-200 duration-400 group-hover:bg-gradient-to-r group-hover:from-cyan-500 group-hover:to-blue-700 h-full w-full p-3 shadow-sm border-solid border-2 rounded-lg border-blue-800 mb-3">
             <div class="group-hover:-translate-y-10 transition delay-150 duration-300">
               <div class="flex">
@@ -191,12 +192,12 @@
                 </span>
               </div>
                 <h1 class="mx-auto group-hover:text-white text-center font-poppins font-semibold text-blue-800">Harga Terjangkau</h1>
-                <p class="mx-auto group-hover:text-white p-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, dignissimos!</p>
+                <p class="mx-auto group-hover:text-white p-3 text-center">Harga hemat dibandingkan dengan yang lain.</p>
                 <p class="mx-auto text-white text-center group-hover:opacity-100 opacity-0 transition duration-300 delay-150"><a href="#">Details</a></p>
             </div>
           </div>
         </div>
-        <div class="h-full w-full bg-white group mb-3">
+        <div class="con-item h-full w-full bg-white group mb-3">
           <div class="transition delay-200 duration-400 group-hover:bg-gradient-to-r group-hover:from-cyan-500 group-hover:to-blue-700 h-full w-full p-3 shadow-sm border-solid border-2 rounded-lg border-blue-800 mb-3">
             <div class="group-hover:-translate-y-10 transition delay-150 duration-300">
               <div class="flex">
@@ -208,7 +209,7 @@
                 </span>
               </div>
                 <h1 class="mx-auto group-hover:text-white text-center font-poppins font-semibold text-blue-800">Akses Wifi Dimanapun</h1>
-                <p class="mx-auto group-hover:text-white p-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, dignissimos!</p>
+                <p class="mx-auto group-hover:text-white p-3 text-center">Layanan wifi terbuka yang mudah diakses pengguna</p>
                 <p class="mx-auto text-white text-center group-hover:opacity-100 opacity-0 transition duration-300 delay-150"><a href="#">Details</a></p>
             </div>
           </div>
@@ -228,7 +229,7 @@
           <span class="md:hidden absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full left-7 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
             <svg aria-hidden="true" class="w-3 h-3 text-blue-800 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
           </span>
-          <div class="md:flex pl-5 md:flex-col md:mr-20 ml-6 md:pr-0 pr-5">
+          <div class="slide-right slide-700 md:flex pl-5 md:flex-col md:mr-20 ml-6 md:pr-0 pr-5">
             <h3 class="flex md:justify-end items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">1 Januari 2020</h3>
             <time class="block md:flex md:justify-end mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on January 13th, 2022</time>
             <p class="mb-4 md:flex md:text-right md:justify-center text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
@@ -241,7 +242,7 @@
         <span class="md:-left-10 absolute flex items-center justify-center md:w-20 md:h-20 w-6 h-6 bg-blue-100 rounded-full left-7 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
           <svg aria-hidden="true" class="md:w-10 md:h-10 w-3 h-3 text-blue-800 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
         </span>
-        <div class="md:flex md:flex-col md:ml-20 md:pl-0 pl-5 ml-6">
+        <div class="slide-left slide-700 md:flex md:flex-col md:ml-20 md:pl-0 pl-5 ml-6">
           <h3 class="flex md:justify-start items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">1 Januari 2020</h3>
           <time class="block md:flex md:justify-start mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on January 13th, 2022</time>
           <p class="mb-4 md:flex md:text-left md:justify-center text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
@@ -251,7 +252,7 @@
         <span class="md:-left-10 absolute md:hidden flex items-center justify-center md:w-20 md:h-20 w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
           <svg aria-hidden="true" class="md:w-10 md:h-10 w-3 h-3 text-blue-800 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
         </span>
-        <div class="md:flex pl-5 md:flex-col md:mr-20 ml-6 md:pr-0 pr-5">
+        <div class="slide-right slide-700 md:flex pl-5 md:flex-col md:mr-20 ml-6 md:pr-0 pr-5">
           <h3 class="flex md:justify-end items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">1 Januari 2020</h3>
           <time class="block md:flex md:justify-end mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on January 13th, 2022</time>
           <p class="mb-4 md:flex md:text-right md:justify-center text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
@@ -290,15 +291,24 @@
         <img src="image/smile.jpg" class="rounded-lg object-cover md:w-3/4 md:mx-auto" alt="smile">
         <div class="flex my-5 justify-center">
           <div class="flex flex-col items-center mx-3">
-            <h2 class="font-semibold text-white text-xl">1000+</h2>
+            <div class="flex">
+              <span class="count font-semibold text-white text-xl">1000</span>
+              <h2 class="font-semibold text-white text-xl">+</h2>
+            </div>
             <p class="font-semibold text-white text-xs">Pelanggan</p>
           </div>
           <div class="flex flex-col items-center mx-3">
-            <h2 class="font-semibold text-white text-xl">798+</h2>
+            <div class="flex">
+              <span class="count font-semibold text-white text-xl">798</span>
+              <h2 class="font-semibold text-white text-xl">+</h2>
+            </div>
             <p class="font-semibold text-white text-xs">Pelanggan Aktif</p>
           </div>
           <div class="flex flex-col items-center mx-3">
-            <h2 class="font-semibold text-white text-xl">20+</h2>
+            <div class="flex">
+              <span class="count font-semibold text-white text-xl">20</span>
+              <h2 class="font-semibold text-white text-xl">+</h2>
+            </div>
             <p class="font-semibold text-white text-center text-xs">Perusahaan</p>
           </div>
         </div>
@@ -395,7 +405,7 @@
     </div>
 
     <div class="container mx-auto my-auto px-8 lg:columns-4 md:columns-2 mt-3 p-5">
-      <div class="container my-10 group">
+      <div class="cont-item container my-10 group">
         <div class="flex h-full flex-wrap">
           <div class="flex relative flex-col mx-auto">
             <span class="absolute -top-7 rounded-full bg-white border-2 border-cyan-500 w-24 h-24 self-center flex items-center justify-center shadow-xl mx-auto text-blue-800 transition duration-300 group-hover:animate-bounce delay-150">
@@ -410,7 +420,7 @@
         <h1 class="font-semibold text-center text-2xl font-nunito">Email</h1>
         <p class="text-center">admin@ayonet.id</p>
       </div>
-      <div class="container mb-10 group">
+      <div class="cont-item container mb-10 group">
         <div class="flex h-full flex-wrap">
           <div class="relative flex flex-col p-5 mx-auto">
             <span class="absolute top-2 rounded-full bg-white border-2 border-cyan-500 w-24 h-24 self-center flex items-center justify-center shadow-xl mx-auto text-blue-800 transition duration-300 group-hover:animate-bounce">
@@ -424,7 +434,7 @@
         <h1 class="font-semibold text-center text-2xl font-nunito">Telepon</h1>
         <p class="text-center">+62xxxxxxxx</p>
       </div>
-      <div class="container mb-10 group">
+      <div class="cont-item container mb-10 group">
         <div class="flex h-full flex-wrap">
           <div class="flex relative flex-col p-5 mx-auto">
             <span class="absolute top-3 rounded-full bg-white border-2 border-cyan-500 w-24 h-24 self-center flex items-center justify-center shadow-xl mx-auto text-blue-800 transition duration-300 group-hover:animate-bounce">
@@ -440,7 +450,7 @@
         <h1 class="font-semibold text-center text-2xl font-nunito">Jam Kantor</h1>
         <p class="text-center">08.00 AM - 17.00 PM</p>
       </div>
-      <div class="container mb-10 group">
+      <div class="cont-item container mb-10 group">
         <div class="flex h-full flex-wrap">
           <div class="flex relative flex-col p-5 mx-auto">
             <span class="absolute top-3 rounded-full bg-white border-2 border-cyan-500 w-24 h-24 self-center flex items-center justify-center shadow-xl mx-auto text-blue-800 transition duration-300 group-hover:animate-bounce">
@@ -465,7 +475,7 @@
   </section>
   
   <!-- FAQ -->
-  <section id="faq" class="container pt-20 px-5 mx-auto mb-10 pb-20 mt-5">
+  <section id="faq" class="container pt-20 px-5 mx-auto pb-20 mt-5">
     <div class="flex flex-col p-5 mx-auto mb-5">
       <span class="rounded-full bg-white border-2 border-cyan-500 w-20 h-20 self-center flex items-center justify-center shadow-xl text-blue-800">
         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chat-text-fill" viewBox="0 0 16 16">
@@ -479,9 +489,9 @@
       <!-- Col FAQ 1 -->
       <div class="container md:pl-10 h-fit">
         <!-- FAQ1 -->
-        <div class="container h-full new mx-auto my-auto px-3">
-          <div class="btn container h-full mb-3 transition delay-150 duration-300 ease-in" onclick="muncul(this)">
-            <a data-collapse-toggle="faq-2" class="flex h-full w-full shadow-lg rounded-l-full rounded-r-full px-5 py-3 border-2 border-blue-800 bg-white" aria-controls="faq-1" data-target="faq-1" aria-expanded="false">
+        <div class="container h-full new mx-auto  my-auto px-3">
+          <div class="btn container h-full mb-3 transition delay-150 duration-300 ease-in" onclick="rotate(this)">
+            <a data-collapse-toggle="faq-2" class="flex h-full w-full shadow-lg rounded-l-full rounded-r-full px-5 py-3 border-2 border-blue-800" aria-controls="faq-1" data-target="faq-1" aria-expanded="false">
               <span class="self-center transition delay-100 duration-200 text-blue-800 font-extrabold">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
@@ -490,39 +500,39 @@
               <h1 class="font-semibold text-sm group-focus:text-white self-center ml-2 select-none">Bagaimana cara menghubungi kami?</h1>
             </a>
             <div class="hidden ease-in transition opa delay-150 duration-300 mt-2 pl-5 text-sm" id="faq-2">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, et!</p>
+              <p>Anda dapat menghubungi nomor telepon berikut (XXX), whatsapp ke nomor +62 XXX, atau email ke XXX</p>
             </div>
           </div>
         </div>
         <!-- FAQ2 -->
         <div class="container h-full new mx-auto my-auto px-3">
-          <div class="btn container h-full mb-3 transition delay-150 duration-300 ease-in" onclick="muncul(this)">
+          <div class="btn container h-full mb-3 transition delay-150 duration-300 ease-in" onclick="rotate(this)">
             <a data-collapse-toggle="faq-1" class="flex h-full w-full shadow-lg rounded-l-full rounded-r-full px-5 py-3 border-2 border-blue-800 bg-white" aria-controls="faq-1" data-target="faq-1" aria-expanded="false">
-              <span class="self-center transition delay-50 duration-200 text-blue-800 font-extrabold">
+              <span class="self-center transition delay-50 duration-200 text-blue-800 font-extrabold" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
                 </svg>
               </span>
-              <h1 class="font-semibold text-sm group-focus:text-white self-center ml-2 select-none">Bagaimana cara menghubungi kami?</h1>
+              <h1 class="font-semibold text-sm group-focus:text-white self-center ml-2 select-none">Bagaimana cara pembayaran?</h1>
             </a>
             <div class="hidden ease-in transition opa delay-150 duration-300 mt-2 pl-5 text-sm" id="faq-1">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, et!</p>
+              <p>Anda dapat membayar secara langsung di Indomaret dan Alfamart terdekat, melalui transfer dengan cara XXX dan pembayaran online lainnya di XXX</p>
             </div>
           </div>
         </div>
         <!-- FAQ3 -->
         <div class="container h-full new mx-auto my-auto px-3">
-          <div class="btn container h-full mb-3 transition delay-150 duration-300 ease-in" onclick="muncul(this)">
+          <div class="btn container h-full mb-3 transition delay-150 duration-300 ease-in" onclick="rotate(this)">
             <a data-collapse-toggle="faq-3" class="flex h-full w-full shadow-lg rounded-l-full rounded-r-full px-5 py-3 border-2 border-blue-800 bg-white" aria-controls="faq-3" data-target="faq-3" aria-expanded="false">
               <span class="self-center transition delay-50 duration-200 text-blue-800 font-extrabold">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
                 </svg>
               </span>
-              <h1 class="font-semibold text-sm group-focus:text-white self-center ml-2 select-none">Bagaimana cara menghubungi kami?</h1>
+              <h1 class="font-semibold text-sm group-focus:text-white self-center ml-2 select-none">Apakah Kami terbuka untuk bermitra?</h1>
             </a>
             <div class="hidden ease-in transition opa delay-150 duration-300 mt-2 pl-5 text-sm" id="faq-3">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, et!</p>
+              <p>Jangan ragu untuk menghubungi Kami, representatif Kami akan selalu siap sedia untuk melayani pertanyaan Anda seputar bisnis</p>
             </div>
           </div>
         </div>
@@ -532,52 +542,69 @@
       <div class="container md:pr-10">
         <!-- FAQ4 -->
         <div class="container new mx-auto my-auto px-3">
-          <div class="btn container mb-3 transition delay-150 duration-300 ease-in" onclick="muncul(this)">
+          <div class="btn container mb-3 transition delay-150 duration-300 ease-in" onclick="rotate(this)">
             <a data-collapse-toggle="faq-4" class="flex h-full w-full shadow-lg rounded-l-full rounded-r-full px-5 py-3 border-2 border-blue-800 bg-white" aria-controls="faq-4" data-target="faq-4" aria-expanded="false">
               <span class="self-center transition delay-50 duration-200 text-blue-800 font-extrabold">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
                 </svg>
               </span>
-              <h1 class="font-semibold text-sm group-focus:text-white self-center ml-2 select-none">Bagaimana cara menghubungi kami?</h1>
+              <h1 class="font-semibold text-sm group-focus:text-white self-center ml-2 select-none">Kenapa memilik Kami?</h1>
             </a>
             <div class="hidden ease-in transition opa delay-150 duration-300 mt-2 pl-5 text-sm" id="faq-4">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, et!</p>
+              <p>Karena kami mendukung program digitalisasi desa dan UMKM go online</p>
             </div>
           </div>
         </div>
         <!-- FAQ5 -->
         <div class="container new mx-auto my-auto px-3">
-          <div class="btn container mb-3 transition delay-150 duration-300 ease-in" onclick="muncul(this)">
+          <div class="btn container mb-3 transition delay-150 duration-300 ease-in" onclick="rotate(this)">
             <a data-collapse-toggle="faq-5" class="flex h-full w-full shadow-lg rounded-l-full rounded-r-full px-5 py-3 border-2 border-blue-800 bg-white" aria-controls="faq-5" data-target="faq-5" aria-expanded="false">
               <span class="self-center transition delay-50 duration-200 text-blue-800 font-extrabold">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
                 </svg>
               </span>
-              <h1 class="font-semibold text-sm group-focus:text-white self-center ml-2 select-none">Bagaimana cara menghubungi kami?</h1>
+              <h1 class="font-semibold text-sm group-focus:text-white self-center ml-2 select-none">Bentuk pelayanan apa saja yang Kami tawarkan?</h1>
             </a>
             <div class="hidden ease-in transition opa delay-150 duration-300 mt-2 pl-5 text-sm" id="faq-5">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, et!</p>
+              <p>Kami melayani pemasangan internet mulai dari tingkat rumah tangga, kebutuhan kantor maupun partai besar</p>
             </div>
           </div>
         </div>
         <!-- FAQ6 -->
         <div class="container new mx-auto my-auto px-3">
-          <div class="btn container mb-3 transition delay-150 duration-300 ease-in" onclick="muncul(this)">
+          <div class="btn container mb-3 transition delay-150 duration-300 ease-in" onclick="rotate(this)">
             <a data-collapse-toggle="faq-6" class="flex h-full w-full shadow-lg rounded-l-full rounded-r-full px-5 py-3 border-2 border-blue-800 bg-white" aria-controls="faq-6" data-target="faq-6" aria-expanded="false">
               <span class="self-center transition delay-50 duration-200 text-blue-800 font-extrabold">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
                 </svg>
               </span>
-              <h1 class="font-semibold text-sm group-focus:text-white self-center ml-2 select-none">Bagaimana cara menghubungi kami?</h1>
+              <h1 class="font-semibold text-sm group-focus:text-white self-center ml-2 select-none">Apa yang harus dilakukan apabila internet putus?</h1>
             </a>
             <div class="hidden ease-in transition opa delay-150 duration-300 mt-2 pl-5 text-sm" id="faq-6">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, et!</p>
+              <p>Segera hubungi Customer Service Kami melalui telepon XXX atau whatsapp ke nomor XXX untuk respon yang lebih cepat</p>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full bg-slate-700 py-10 items-center">
+    <div class="container columns-2 lg:columns-4 py-10 px-5 mx-auto justify-between">
+      <div class="px-5 py-5 justify-center">
+        <img class="img-logo" src="/image/mitra1.png" alt="mitra1">
+      </div>
+      <div class="img-logo px-5 py-5 justify-center">
+        <img src="/image/mitra2.png" alt="mitra2">
+      </div>
+      <div class="img-logo px-5 py-5 justify-center">
+        <img src="/image/mitra3.png" alt="mitra3">
+      </div>
+      <div class="img-logo px-5 py-5 justify-center">
+        <img src="/image/mitra4.png" alt="mitra4">
       </div>
     </div>
   </section>
