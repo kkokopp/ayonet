@@ -9,6 +9,9 @@ let rotate = function(icon) {
 
 }
 
+function wa(){
+    window.open("https://wa.me/6281355538777?text=I'm%20interested%20in%20your%20car%20for%20sale");
+}
 
 const width = window.innerWidth;
 
